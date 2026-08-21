@@ -19,7 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.foundation.layout.height
+import androidx.compose.ui.res.stringResource
 import com.example.jatpack.ui.theme.JatpackTheme
 
 class MainActivity : ComponentActivity() {
@@ -48,26 +48,17 @@ fun MonArticle(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth()
         )
         Text(
-            text = "Jetpack Compose tutorial",
+            text = stringResource(R.string.titre_article),
             fontSize = 24.sp,
             modifier = Modifier.padding(16.dp)
         )
         Text(
-            text = "Jetpack Compose is a modern toolkit for building native Android UI. Compose\n" +
-                    "simplifies and accelerates UI development on Android with less code,\n" +
-                    "powerful tools, and intuitive Kotlin APIs.",
+            text =stringResource(R.string.paragraphe_1),
             modifier = Modifier.padding(start = 16.dp, end = 16.dp),
             textAlign = TextAlign.Justify
         )
         Text(
-            text = "In this tutorial, you build a simple UI component with declarative functions.\n" +
-                    "You call Compose functions to say what elements you want and the Compose\n" +
-                    "compiler does the rest. Compose is built around Composable functions. These\n" +
-                    "functions let you define your app's UI programmatically because they let you\n" +
-                    "describe how it should look and provide data dependencies, rather than focus\n" +
-                    "on the process of the UI's construction, such as initializing an element and\n" +
-                    "then attaching it to a parent. To create a Composable function, you add the\n" +
-                    "@Composable annotation to the function name",
+            text =stringResource(R.string.paragraphe_2),
             modifier = Modifier.padding(16.dp),
             textAlign = TextAlign.Justify
         )
