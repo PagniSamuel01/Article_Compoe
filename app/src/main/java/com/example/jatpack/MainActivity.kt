@@ -18,6 +18,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.foundation.layout.height
 import com.example.jatpack.ui.theme.JatpackTheme
 
 class MainActivity : ComponentActivity() {
@@ -40,8 +42,9 @@ class MainActivity : ComponentActivity() {
 fun MonArticle(modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Image(
-            painter = painterResource(R.drawable.bg_compose),
+            painter = painterResource(R.drawable.bg_compose_background),
             contentDescription = null,
+            contentScale = ContentScale.FillWidth,
             modifier = Modifier.fillMaxWidth()
         )
         Text(
